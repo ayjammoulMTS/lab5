@@ -1,0 +1,78 @@
+#body{
+    background-color: rgb(49, 223, 223);
+}
+
+#header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#Small{
+    display: flex;
+    flex-direction: row;
+}
+#image{
+    width: 100px;
+    height: 20px;
+    margin-left: 300px ;
+}
+#form-1{
+    margin-left: 300px;
+}
+
+#form-2{
+    margin-left: 300px;
+}
+
+#OrderSummary{
+    margin-left: 300px;
+}
+
+fieldset{
+    margin-top: 20px;
+    width: 800px;
+    
+}
+
+.labels{
+    width: 800px;
+    height: 20px;
+
+    border: none;
+    border-radius: 10px;
+}
+
+#Address{
+    height:50px;
+}
+
+#OrderSummary{
+    width: 50vw;
+    margin-left: 25vw;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: green;
+    border-style: solid;
+    border-width: thick;
+    background-color: #ffffff;
+   }
+
+#backButton{
+    display: none;
+}
+
+#form-2{
+    display: none;
+}
+
+#OrderSummary{
+    display: none;
+}
+
+#Buttons{
+    margin-left: 300px;
+    display: flex;
+    flex-direction: row;
+}
+

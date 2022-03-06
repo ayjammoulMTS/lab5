@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <Link rel="stylesheet" href="lab5.css">
+    </head>
+
+    <body id="body">
+        <header id="header">
+            Pizza Order Form
+        </header>
+
+        <div id="form-1">
+            <form id="first">
+                <div >
+                    <fieldset>
+                        <div id="Small">
+                            <div>Size: <input type="range" min="1" max="4" value="1"  id="slider" onchange="ChangePizzaSize(this.value)"></div>
+                            <div id="size">Small 6$</div>
+                        </div>
+                        <div ><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="pizza" id="image"></div>
+                    </fieldset>
+                </div>
+            
+                <div>
+                    <fieldset>
+                        <legend>Meat Toppings(+2$ for each)</legend>
+                        <div id="meats">
+                            <input type="checkbox" id="Pepperoni" name="meets" value="Pepperoni">
+                            <label for="meets"> Pepperoni</label><br>
+                            <input type="checkbox" id="Sausage" name="meets" value="Sausage">
+                            <label for="meets"> Sausage</label><br>
+                            <input type="checkbox" id="GroundBeef" name="meets" value="GroundBeef">
+                            <label for="meets"> Ground Beed</label><br>
+                            <input type="checkbox" id="Anchovy" name="meets" value="Anchovy">
+                            <label for="meets"> Anchovy</label><br>
+                            <input type="checkbox" id="Chicken" name="meets" value="Chicken">
+                            <label for="meets"> Chicken</label><br>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Veggies(+1$ for each)</legend>
+                        <div id="veggies" >
+                            <input type="checkbox" id="Tomatoes" name="Tomatoes" value="Tomatoes">
+                            <label for="Tomatoes"> Tomatoes</label><br>
+                            <input type="checkbox" id="Onions" name="Onions" value="Onions">
+                            <label for="Onions"> Onions</label><br>
+                            <input type="checkbox" id="ExtraCheese" name="Olives" value="Olives">
+                            <label for="Olives"> Olives</label><br>
+                            <input type="checkbox" id="Mushrooms" name="Mushrooms" value="Mushrooms">
+                            <label for="Mushrooms"> Mushrooms</label><br>
+                            <input type="checkbox" id="Pineapple" name="Pineapple" value="Pineapple">
+                            <label for="Pineapple"> Pineapple</label><br>
+                            <input type="checkbox" id="Spinach" name="Spinach" value="Spinach">
+                            <label for="Spinach"> Spinach</label><br>
+                            <input type="checkbox" id="Jalapeno" name="Jalapeno" value="Jalapeno">
+                            <label for="Jalapeno"> Jalapeno</label><br>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Cheese</legend>
+                        <div id="cheese">
+                            <input type="radio" id="RegularCheese" name="cheese" value="cheese">
+                            <label for="RegularCheese"> Regular Cheese</label><br>
+                            <input type="radio" id="MasterCard" name="cheese" value="no cheese">
+                            <label for="NoCheese"> No Cheese</label><br>
+                            <input type="radio" id="ExtraCheese" name="cheese" value="extra cheese">
+                            <label for="ExtraCheese"> Extra Cheese ($3)</label><br>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Payment</legend>
+                        <div>
+                            <input type="radio" id="Cash" name="Pay" value="">
+                            <label for="Cash"> Cash</label><br>
+                            <input type="radio" id="MasterCard" name="Pay" value="">
+                            <label for="MasterCard"> MasterCard</label><br>
+                            <input type="radio" id="Visa" name="Pay" value="Boat">
+                            <label for="Visa">Visa</label><br>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+            </form>
+        </div>
+
+        <div id="form-2">
+            <form>
+                <div id="info">
+                    <label for="fname">First name:</label><br><br>
+                    <input type="text" class="labels" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label><br><br>
+                    <input type="text" class="labels" id="lname" name="lname"><br><br>
+                    <label for="Email">Email:</label><br><br>
+                    <input type="text" class="labels" id="Email" name="Email"><br><br>
+                    <label for="PhoneNumber">Phone Number:</label><br><br>
+                    <input type="text" class="labels" id="PhoneNumber" name="PhoneNumber"><br><br>
+                    <label for="City">City:</label><br><br>
+                    <select name="City" class="labels" id="City"><br><br>
+                        <option value="" disabled selected>-Please choose an option-</option> 
+                        <option value="Beirut">Beirut</option> 
+                        <option value="Saida">Saida</option> 
+                    </select><br><br>
+                    <label for="Address">Address:</label><br><br>
+                    <textarea type="text" class="labels" id="Address" name="Address"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div id="OrderSummary">
+            <h1>Order Summary</h1>
+            <h2>Deliver to</h2>
+            <p id="dlvrTo"></p>
+            <h2>Order</h2>
+            <ul id="orderList"></ul>
+            <h2 id="total">Total</h2>
+           </div>
+        <div id="Buttons">
+            <input id="backButton" type="button" value="Back" onClick="back()">
+            <input id="nextButton" type="button" value="Next" onClick="next()">
+        </div>
+           <script src="lab5.js" type="text/javascript"></script>
+
+        
+    </body>
+
+
+</html>
